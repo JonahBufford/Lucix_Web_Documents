@@ -1,0 +1,326 @@
+@charset "ISO-8859-1";
+
+body{
+    overflow: hidden;
+    height: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 2px;
+}
+
+.table2{
+    padding: 2px;
+}
+
+.table2 td{
+    padding: 4px;
+}
+
+td{
+    border: 1px solid black;
+}
+
+#container{
+    height: 90%;
+    padding: 2% 0 0 0;
+}
+
+#content{
+	margin: 3em 2em;
+    height: 80%;
+}
+
+#mapHolder{
+    position: relative;
+    overflow: hidden;
+}
+
+#mapImage{
+    max-width:100%;
+    /* max-height: 100%; */
+}
+
+#mapStar{
+    width: 5%;
+    position: absolute;
+    left: 19%;
+    top: 24%;
+    margin: 0 0 1% 0;
+    z-index: 3;
+}
+
+.extinguisher, .firstaid, .eye, .hazmat, .msds, .gas, .aed, .earthquake, .printer, .conf {
+    width: 1.5%;
+    position: absolute;
+    display: none;
+}
+
+.printLabel, .confLabel{
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.753);
+    display: none;
+    border-radius: 3px;
+    padding: .2em .5em;
+    margin: -0.5em 0 0 1.5em;
+
+}
+
+.exit{
+    width: 3%;
+    position: absolute;
+    display: none;
+}
+
+.button1{
+    margin: 0 1em;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 1.25em;
+    padding: .2em .75em;
+    text-decoration: none;
+}
+
+.button1:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+.button2{
+    margin: 0 1em;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: .8em;
+    padding: .2em .75em;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+.button2:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#facTable{
+    border-collapse: separate;
+}
+
+#facTable td{
+    height: 40px;
+}
+
+.tdLeft {
+    width: 22%;
+    text-align: center;
+    background: #b8b8b8;
+    color: #000;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.tdRight {
+    width: 12%;
+    border: none;
+    padding-right: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.label {
+    background-color: rgb(233, 233, 233);
+}
+
+/* DIVS AND LAYOUT */
+
+#mainSection{
+	padding: 2em 3em;
+	border: 1px solid black;
+	background: #333;
+	border-radius: 5px;
+    color: white;
+}
+
+.sectionTitle{
+	font-size: 1.5em;
+	padding: 0 0 1em 1em;
+}
+
+.wrapper{
+	height: 60%;
+}
+
+.holderDiv{
+    padding: .5em;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px #000;
+	position: relative;
+}
+
+
+#statusImg{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 99;
+}
+
+.leftDiv{
+    float: left;
+    width: 40%;
+    /* height: 40%; */
+    overflow: auto;
+    color: black;
+}
+
+.rightDiv{
+    float: right;
+    width: 50%;
+    overflow: auto;
+}
+
+.labelDiv{
+    font-size: 1em;
+    color: white;
+    border: 1px solid gray;
+    border-bottom: none;
+    border-radius: 3px;
+    background: #003062;
+    display: inline-block;
+    padding: .2em 1em;
+    margin: 0;
+}
+
+.title{
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.sectionHolder{
+    position: relative;
+    margin: .5em;
+    border: 2px solid rgb(83, 83, 83);
+    background: #336397;
+    border-radius: 5px;
+    padding: .5em;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+}
+
+select{
+    font-size: 1em;
+    padding: .2em .5em;
+}
+
+#empInfo{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border: 2px solid #fff;
+    background: #000000;
+    border-radius: 5px;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    box-shadow: 5px 5px 5px rgb(70, 70, 70);
+}
+
+.empTable th{
+    background: #2666aa;
+    color: #fff;
+    padding: .3em .7em;
+    font-weight: normal;
+    border: 1px solid #333;
+}
+
+.empTable td{
+    padding: .3em .7em;
+    background: #fff;
+    color: #000;
+    border: 1px solid #333;
+}
+
+.empHolderTable{
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+.empHolderTable td{
+    border: none;
+}
+
+.facImg{
+    width: 2.5em;
+}
+
+.mapImg{
+    width: 3%;
+}
+
+.cleanRoom{
+    background: rgb(54, 187, 54);
+}
+
+.breakRoom{
+    background: rgb(99, 30, 139);
+    color: #fff;
+}
+
+.confRoom{
+    background: rgb(12, 129, 138);
+    color: #fff;
+}
+
+.restRoom{
+    background: rgb(172, 120, 9);
+}
+
+.table3{
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+.table3 td{
+    padding: .5em 1em;
+    border: 3px solid rgb(68, 68, 68);
+    text-align: center;
+    font-size: .8em;
+}

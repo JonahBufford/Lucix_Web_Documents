@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+
+html{
+	height: 100%;
+	width: 100%;
+	font-size: .9em;
+}
+
+body{
+	width: 98%;
+	margin: 0 auto;
+	padding: 1em;
+	background: #ddd;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* header styles */
+
+#header{
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid #666;
+	padding: 1em .2em .5em 0;
+	height: 2em;
+	box-shadow: 0 15px 25px #000;
+}
+
+#header_container{
+	left:0;
+	position:fixed;
+	width:100%;
+	top:0;
+	background: #fff;
+	z-index:1;
+}
+
+.tmep{
+	color: #0000ff;
+}
+
+thead td, thead th{
+	cursor: pointer;
+}
+
+.headerTable {
+	width: 100%;
+}
+
+.headerTable a {
+	text-decoration: none;
+	font-weight: normal;
+	padding: .2em .5em .2em .5em;
+	color: #333;
+	margin: .5em;
+	}
+
+.headerTable a:hover {
+	text-decoration: underline;
+}
+
+.headerTable td{
+	border: none;
+}
+
+.cell1{
+	font-size: 1.75em;
+	text-align: left;
+	white-space: nowrap;
+	border: none;
+}
+
+.cell2{
+	font-size: 1.2em;
+	text-align: right;
+	white-space: nowrap;
+}
+
+#container {
+	margin:0 auto;
+ 	overflow:auto;
+ 	padding:2.5em 0;
+ 	z-index:2;
+ }
+
+
